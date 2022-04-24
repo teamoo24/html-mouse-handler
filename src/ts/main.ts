@@ -1,3 +1,6 @@
 import * as PIXI from 'pixi.js'
 
-document.write("hello")
+window.onload = () => {
+    const app = new PIXI.Application({width: 400, height: 200});
+	document.getElementById("main")?.appendChild(app.view);
+}
