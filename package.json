@@ -1,0 +1,13 @@
+{
+  "name": "mousehandle",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc":"tsc",
+    "init":"tsc --init",
+    "watch":"tsc --watch"
+  },
+  "author": "",
+  "license": "ISC"
+}
