@@ -26,7 +26,16 @@ const config = {
         // Learn more about plugins from https://webpack.js.org/configuration/plugins/
     ],
     module: {
-        rules: [
+        rules: [{
+            test: /\.css$/,
+            include: /stylesheets|node_modules/,
+            use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.scss$/,
+                include: /stylesheets/,
+                use: [ 'style-loader', 'css-loader', 'sass-loader' ]
+            },
             {
                 test: /\.(eot|svg|ttf|woff|woff2|png|jpg|gif)$/i,
                 type: 'asset',
